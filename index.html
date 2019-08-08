@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="unit-style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Unit Converter</h1>
+    </header>
+
+    <div class="tabs">
+      <button id="length" class="set">Length</button>
+      <button id="temp" class="unset">Temperature</button>
+      <button id="area" class="unset">Area</button>
+      <button id="volume" class="unset">Volume</button>
+      <button id="weight" class="unset">Weight</button>
+      <button id="time" class="unset">Time</button>
+    </div>
+
+    <div class="data">
+      <h4>From:</h4>
+      <h4>To:</h4>
+
+      <input type="number">
+      <div class="conv-num">
+
+      </div>
+    </div>
+
+    <div class="conversion">
+      <div class="length">
+        <ul>
+          <li id="meter" class="selected">Meter</li>
+          <li id="kilometer">Kilometer</li>
+          <li id="centimeter">Centimeter</li>
+          <li id="millimeter">Milimeter</li>
+          <li id="micrometer">Micrometer</li>
+          <li id="nanometer">Nanometer</li>
+          <li id="mile">Mile</li>
+          <li id="yard">Yard</li>
+          <li id="foot">Foot</li>
+          <li id="inch">Inch</li>
+        </ul>
+
+        <ul>
+          <li id="meter2">Meter <span></span></li>
+          <li id="kilometer2" class="selected">Kilometer <span></span</li>
+          <li id="centimeter2">Centimeter <span></span</li>
+          <li id="millimeter2">Milimeter <span></span</li>
+          <li id="micrometer2">Micrometer <span></span</li>
+          <li id="nanometer2">Nanometer <span></span</li>
+          <li id="mile2">Mile <span></span</li>
+          <li id="yard2">Yard <span></span</li>
+          <li id="foot2">Foot <span></span</li>
+          <li id="inch2">Inch <span></span></li>
+        </ul>
+      </div>
+
+      <div class="temp">
+        <ul>
+          <li id="celsius" class="selected">Celsius</li>
+          <li id="kelvin" >Kelvin</li>
+          <li id="fahrenheit" >Fahrenheit</li>
+        </ul>
+
+        <ul>
+          <li id="celsius2">Celsius <span></span></li>
+          <li id="kelvin2" class="selected">Kelvin <span></span></li>
+          <li id="fahrenheit2" >Fahrenheit <span></span></li>
+        </ul>
+      </div>
+
+      <div class="area">
+        <ul>
+          <li id="square-meter"  class="selected">Square Meter</li>
+          <li id="square-kilometer" >Square Kilometer</li>
+          <li id="square-centimeter" >Square Centimeter</li>
+          <li id="square-millimeter" >Square Millimeter</li>
+          <li id="square-micrometer" >Square Micrometer</li>
+          <li id="square-mile" >Square Mile</li>
+          <li id="square-yard" >Square Yard</li>
+          <li id="square-foot" >Square Foot</li>
+          <li id="square-inch" >Square Inch</li>
+          <li id="acre" >Acre</li>
+        </ul>
+
+        <ul>
+          <li id="square-meter2">Square Meter <span></span></li>
+          <li id="square-kilometer2" class="selected">Square Kilometer <span></span></li>
+          <li id="square-centimeter2" >Square Centimeter <span></span></li>
+          <li id="square-millimeter2" >Square Millimeter <span></span></li>
+          <li id="square-micrometer2" >Square Micrometer <span></span></li>
+          <li id="square-mile2" >Square Mile <span></span></li>
+          <li id="square-yard2" >Square Yard <span></span></li>
+          <li id="square-foot2" >Square Foot <span></span></li>
+          <li id="square-inch2" >Square Inch <span></span></li>
+          <li id="acre2" >Acre <span></span></li>
+        </ul>
+      </div>
+
+      <div class="volume">
+        <ul>
+          <li id="cubic-meter"  class="selected">Cubic Meter</li>
+          <li id="cubic-kilometer" >Cubic Kilometer</li>
+          <li id="cubic-centimeter" >Cubic Centimeter</li>
+          <li id="cubic-millimeter" >Cubic Millimeter</li>
+          <li id="liter" >Liter</li>
+          <li id="milliliter" >Milliliter</li>
+          <li id="us-gallon" >US Gallon</li>
+          <li id="us-quart" >US Quart</li>
+          <li id="us-pint" >US Pint</li>
+          <li id="us-cup" >US Cup</li>
+          <li id="us-fluid-ounce" >US Fluid Ounce</li>
+        </ul>
+
+        <ul>
+          <li id="cubic-meter2">Cubic Meter <span></span></li>
+          <li id="cubic-kilometer2" class="selected">Cubic Kilometer <span></span></li>
+          <li id="cubic-centimeter2" >Cubic Centimeter <span></span></li>
+          <li id="cubic-millimeter2" >Cubic Millimeter <span></span></li>
+          <li id="liter2" >Liter <span></span></li>
+          <li id="milliliter2" >Milliliter <span></span></li>
+          <li id="us-gallon2" >US Gallon <span></span></li>
+          <li id="us-quart2" >US Quart <span></span></li>
+          <li id="us-pint2" >US Pint <span></span></li>
+          <li id="us-cup2" >US Cup <span></span></li>
+          <li id="us-fluid-ounce2" >US Fluid Ounce <span></span></li>
+        </ul>
+      </div>
+
+      <div class="weight">
+        <ul>
+          <li id="kilogram"  class="selected">Kilogram</li>
+          <li id="gram" >Gram</li>
+          <li id="milligram" >Milligram</li>
+          <li id="pound" >Pound</li>
+          <li id="ounce" >Ounce</li>
+          <li id="carrat" >Carrat</li>
+        </ul>
+
+        <ul>
+          <li id="kilogram2">Kilogram <span></span></li>
+          <li id="gram2" class="selected">Gram <span></span></li>
+          <li id="milligram2" >Milligram <span></span></li>
+          <li id="pound2" >Pound <span></span></li>
+          <li id="ounce2" >Ounce <span></span></li>
+          <li id="carrat2" >Carrat <span></span></li>
+        </ul>
+      </div>
+
+      <div class="time">
+        <ul>
+          <li id="second"  class="selected">Second</li>
+          <li id="millisecond" >Millisecond</li>
+          <li id="microsecond" >Microsecond</li>
+          <li id="nanosecond" >Nanosecond</li>
+          <li id="minute" >Minute</li>
+          <li id="hour" >Hour</li>
+          <li id="day" >Day</li>
+          <li id="week" >Week</li>
+          <li id="month" >Month</li>
+          <li id="year" >Year</li>
+        </ul>
+
+        <ul>
+          <li id="second2">Second <span></span></li>
+          <li id="millisecond2" class="selected">Millisecond <span></span></li>
+          <li id="microsecond2" >Microsecond <span></span></li>
+          <li id="nanosecond2" >Nanosecond <span></span></li>
+          <li id="minute2" >Minute <span></span></li>
+          <li id="hour2" >Hour <span></span></li>
+          <li id="day2" >Day <span></span></li>
+          <li id="week2" >Week <span></span></li>
+          <li id="month2" >Month <span></span></li>
+          <li id="year2" >Year <span></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="result">
+      <h2></h2>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="unit-code.js"></script>
+  </body>
+</html>
